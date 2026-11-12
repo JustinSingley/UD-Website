@@ -15,8 +15,8 @@ set_website_title("Explore UD")
 set_site_information(
     author="Justin Singley",
     description="Explore UD: costs, campus life, and activities for future students.",
-    sources="University of Delaware official website: https://www.udel.edu/; Drafter documentation",
-    planning="See the planning document included in this GitHub repository.",
+    sources="University of Delaware official website: https://www.udel.edu/;, ChatGPT LLM",
+    planning="Copy of CS1 Final project 0_Pick a Problem.docx, CS1 Final Project 1_Design.docx, Website Flowchart.pdf",
     links=["https://www.udel.edu/"]
 )
 set_website_framed(False)
@@ -86,7 +86,7 @@ def index(state: State) -> Page:
         "Learn about costs, campus living, student life, and activities at UD.",
         "What is your name?",
         TextBox("new_name", state.student_name),
-        Button("Save Name", "save_name", ["new_name"]),
+        Button("Save Name", "save_name"),
         Header("Choose a page to explore", 2)
     ] + navigation())
 

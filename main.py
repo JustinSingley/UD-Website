@@ -88,9 +88,11 @@ def about(state: State) -> Page:
         "University of Delaware official website and ChatGPT LLM.",
         Link("University of Delaware Official Website", "https://www.udel.edu/"),
         Header("Planning", 2),
+        BulletedList([
         "Copy of CS1 Final project 0_Pick a Problem.docx",
         "CS1 Final Project 1_Design.docx",
         "Website Flowchart.pdf",
+        ])
         "These planning files are uploaded in the GitHub repository.",
         Link("View Project Repository", "https://github.com/JustinSingley/UD-Website")
     ] + navigation())

@@ -86,7 +86,7 @@ def index(state: State) -> Page:
         "Learn about costs, campus living, student life, and activities at UD.",
         "What is your name?",
         TextBox("new_name", state.student_name),
-        Button("Save Name", "save_name"),
+        Button("Save Name", "save_name", ["new_name"]),
         Header("Choose a page to explore", 2)
     ] + navigation())
 
